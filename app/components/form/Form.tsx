@@ -2,7 +2,7 @@
 
 import PersonalInfo from "./components/PersonalInfo";
 import Plan from "./components/Plan";
-import AddOns from "./components/AddOns";
+// import AddOns from "./components/AddOns";
 import Finish from "./components/Finish";
 import Buttons from "../Buttons";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
@@ -74,7 +74,7 @@ const FormInput = () => {
           <div>
             <PersonalInfo register={register} errors={errors} />
             <Plan register={register} />
-            <AddOns register={register} />
+            {/* <AddOns register={register} /> */}
             <Finish />
           </div>
 
