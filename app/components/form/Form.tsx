@@ -1,7 +1,7 @@
 "use client";
 
-import PersonalInfo from "./components/PersonalInfo";
-import Plan from "./components/Plan";
+// import PersonalInfo from "./components/PersonalInfo";
+// import Plan from "./components/Plan";
 // import AddOns from "./components/AddOns";
 // import Finish from "./components/Finish";
 import Buttons from "../Buttons";
@@ -72,8 +72,8 @@ const FormInput = () => {
           className="flex flex-col h-full md:justify-between"
         >
           <div>
-            <PersonalInfo register={register} errors={errors} />
-            <Plan register={register} />
+            {/* <PersonalInfo register={register} errors={errors} />
+            <Plan register={register} /> */}
             {/* <AddOns register={register} /> */}
             {/* <Finish /> */}
           </div>
