@@ -3,7 +3,7 @@
 import PersonalInfo from "./components/PersonalInfo";
 import Plan from "./components/Plan";
 // import AddOns from "./components/AddOns";
-import Finish from "./components/Finish";
+// import Finish from "./components/Finish";
 import Buttons from "../Buttons";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { useSelectContext } from "@/app/context/SelectContext";
@@ -75,7 +75,7 @@ const FormInput = () => {
             <PersonalInfo register={register} errors={errors} />
             <Plan register={register} />
             {/* <AddOns register={register} /> */}
-            <Finish />
+            {/* <Finish /> */}
           </div>
 
           <div className="hidden md:block pb-6">
