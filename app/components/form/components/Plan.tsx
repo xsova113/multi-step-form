@@ -21,7 +21,7 @@ const Plan: React.FC<PlanProps> = ({ register }) => {
             htmlFor="plan"
             tabIndex={0}
             key={item.title}
-            className={`flex flex-row md:flex-col p-4 md:w-[140px] md:h-[190px]  max-md:gap-4 md:justify-between transition border hover:border-[#473DFF] cursor-pointer outline-none rounded-lg ${
+            className={`flex flex-row md:flex-col p-4 md:w-[140px] md:h-[190px] max-md:gap-4 md:justify-between transition border hover:border-[#473DFF] cursor-pointer outline-none rounded-lg ${
               plan === item.title && "border-[#473DFF] bg-[#FAFBFF]"
             }`}
             onClick={() => {
@@ -40,6 +40,9 @@ const Plan: React.FC<PlanProps> = ({ register }) => {
                   ? item.monthlyDisplay
                   : item.yearlyDisplay}
               </h3>
+              {subscriptions === "yearly" && (
+                <span className="text-sm text-[#02295d] pt-1">2 months free</span>
+              )}
             </div>
           </label>
         ))}
